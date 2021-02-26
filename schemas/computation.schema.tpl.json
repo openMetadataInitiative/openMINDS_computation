@@ -1,0 +1,37 @@
+{
+    "_type": "https://openminds.ebrains.eu/computation/Computation",
+    "_extends": "../../core/research/protocolExecution.schema.tpl.json",
+    "required": [
+        "input",
+        "output",
+        "protocol",
+        "environment"
+    ],
+    "properties": {
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/FileBundle",
+                "https://openminds.ebrains.eu/core/FileInstance",
+                "https://openminds.ebrains.eu/products/SoftwareVersion"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/FileBundle",
+                "https://openminds.ebrains.eu/core/FileInstance"
+            ]
+        },
+        "environment": {
+            "_instruction": "Add the computational environment in which this computation was executed.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/Environment"
+            ]
+        },
+        "protocol": {
+            "_instruction": "Add the protocol of this computation.",
+            "_linkedTypes": [
+              "https://openminds.ebrains.eu/computation/Protocol"
+            ]
+        }
+    }
+}
