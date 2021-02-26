@@ -1,0 +1,25 @@
+{
+    "_type": "https://openminds.ebrains.eu/computation/Agent",
+    "required": [
+        "name",
+        "software"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "_instruction": "Enter a name for this software agent."
+        },
+        "software": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SoftwareVersion"
+            ],
+            "_instruction": "Enter the software version being run as this agent."
+        },
+        "environment": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/Environment"
+            ],
+            "_instruction": "Enter the computing environment in which this agent is running/ran."
+        }
+    }
+}

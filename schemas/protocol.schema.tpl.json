@@ -11,7 +11,11 @@
         },
         "arguments": {
             "type": "array",
-            "_instruction": "Enter command line arguments as a list of strings"
+            "_instruction": "Enter command line arguments as a list of strings",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
         }
     }
 }
