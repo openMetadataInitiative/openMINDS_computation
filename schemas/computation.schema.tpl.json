@@ -55,7 +55,7 @@
                 "https://openminds.ebrains.eu/controlledTerms/ActionStatusType"
             ]
         },
-        "resource_usage": {
+        "resourceUsage": {
             "_instruction": "Enter the resources (e.g. core-hours) used by this computation.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
