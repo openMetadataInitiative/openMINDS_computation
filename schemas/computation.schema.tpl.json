@@ -49,6 +49,12 @@
                 "https://openminds.ebrains.eu/computation/Agent"
             ]
         },
+        "wasInformedBy": {
+            "_instruction": "Add any other computation that sent data to this one during runtime.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/Computation"
+            ]
+        },
         "status": {
             "_instruction": "Enter the current status of this computation.",
             "_linkedTypes": [
