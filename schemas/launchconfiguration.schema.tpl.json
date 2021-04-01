@@ -1,0 +1,35 @@
+{
+    "_type": "https://openminds.ebrains.eu/computation/LaunchConfiguration",
+    "required": [
+        "executable"
+    ],
+    "properties": {
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description of this launch configuration."
+        },
+        "name": {
+            "type": "string",
+            "_instruction": "Enter a descriptive name for this launch configuration."
+        },
+        "executable": {
+            "type": "string",
+            "_instruction": "Enter the path to the command-line executable"
+        },
+        "arguments": {
+            "type": "array",
+            "_instruction": "Enter command line arguments as a list of strings",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "environmentVariables": {
+            "_instruction": "Enter any environment variables defined by this launch configuration.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/ParameterSet"
+            ]
+
+        }
+    }
+}

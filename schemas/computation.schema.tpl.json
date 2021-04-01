@@ -28,10 +28,10 @@
                 "https://openminds.ebrains.eu/computation/Environment"
             ]
         },
-        "protocol": {
-            "_instruction": "Add the protocol of this computation.",
+        "launchConfiguration": {
+            "_instruction": "Add the launch configuration of this computation, e.g. command-line arguments",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/Protocol"
+                "https://openminds.ebrains.eu/computation/LaunchConfiguration"
             ]
         },
         "startedAtTime": {
