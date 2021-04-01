@@ -46,7 +46,7 @@
             "_instruction": "Add the person or software agent who launched this computation.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/Person",
-                "https://openminds.ebrains.eu/computation/Agent"
+                "https://openminds.ebrains.eu/computation/SoftwareAgent"
             ]
         },
         "wasInformedBy": {
