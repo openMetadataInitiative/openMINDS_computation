@@ -4,7 +4,7 @@
     "input": {
         "_linkedTypes": [
             "https://openminds.ebrains.eu/core/FileBundle",
-            "https://openminds.ebrains.eu/core/FileInstance",
+            "https://openminds.ebrains.eu/core/File",
             "https://openminds.ebrains.eu/products/SoftwareVersion",
             "https://openminds.ebrains.eu/products/ModelVersion"
         ]
@@ -12,7 +12,7 @@
     "output": {
         "_linkedTypes": [
             "https://openminds.ebrains.eu/core/FileBundle",
-            "https://openminds.ebrains.eu/core/FileInstance",
+            "https://openminds.ebrains.eu/core/File",
             "https://openminds.ebrains.eu/products/ModelVersion"
         ]
     }
