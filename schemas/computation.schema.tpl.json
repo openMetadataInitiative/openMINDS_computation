@@ -1,0 +1,84 @@
+{
+    "_type": "https://openminds.ebrains.eu/computation/Computation",
+    "_extends": "/core/research/activity.schema.tpl.json",
+    "required": [
+        "input",
+        "output",
+        "launchConfiguration",
+        "environment",
+        "startedAtTime"
+    ],
+    "properties": {
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/FileBundle",
+                "https://openminds.ebrains.eu/core/FileInstance",
+                "https://openminds.ebrains.eu/products/SoftwareVersion"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/FileBundle",
+                "https://openminds.ebrains.eu/core/FileInstance"
+            ]
+        },
+        "environment": {
+            "_instruction": "Add the computational environment in which this computation was executed.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/Environment"
+            ]
+        },
+        "launchConfiguration": {
+            "_instruction": "Add the launch configuration of this computation, e.g. command-line arguments",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/LaunchConfiguration"
+            ]
+        },
+        "startedAtTime": {
+            "type": "date-time",
+            "_instruction": "Enter the timestamp of when the computation started."
+        },
+        "endedAtTime": {
+            "type": "date-time",
+            "_instruction": "Enter the timestamp of when the computation ended."
+        },
+        "startedBy": {
+            "_instruction": "Add the person or software agent who launched this computation.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/Person",
+                "https://openminds.ebrains.eu/computation/SoftwareAgent"
+            ]
+        },
+        "wasInformedBy": {
+            "_instruction": "Add any other computation that sent data to this one during runtime.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/Computation"
+            ]
+        },
+        "status": {
+            "_instruction": "Enter the current status of this computation.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/ActionStatusType"
+            ]
+        },
+        "resourceUsage": {
+            "_instruction": "Enter the resources (e.g. core-hours, energy) used by this computation.",
+            "type": "array",
+            "minItems":  1,
+            "uniqueItems": true,
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "tags": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Enter custom tags for this computation.",
+            "items": {
+              "type": "string"
+            }
+        }
+    }
+}

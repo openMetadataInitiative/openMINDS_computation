@@ -1,0 +1,41 @@
+{
+    "_type": "https://openminds.ebrains.eu/computation/Environment",
+    "required": [
+        "hardware",
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "_instruction": "Enter a name/label for this computing environment"
+        },
+        "hardware": {
+            "_instruction": "Select the hardware system on which this environment runs",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/HardwareSystem"
+            ]
+        },
+        "configuration": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add all important hardware settings defining this environment.",
+            "_linkedTypes": [
+               "https://openminds.ebrains.eu/core/ParameterSet"
+            ]
+        },
+        "software": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add all software versions available in this environment. [Note: this is optional. The Analysis/Simulation schemas allow storing a list of software versions actually _used_ in a computation",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SoftwareVersion"
+             ]
+        },
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description of this computing environment"
+        }
+    }
+  }
