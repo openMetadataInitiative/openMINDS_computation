@@ -1,3 +1,7 @@
+<a href="https://github.com/HumanBrainProject/openMINDS_computation/blob/v1/img/light_openMINDS-comp-logo.png">
+    <img src="https://github.com/HumanBrainProject/openMINDS_computation/blob/v1/img/light_openMINDS-comp-logo.png" alt="openMINDS computation logo" title="openMINDS computation" align="right" height="70" />
+</a>
+
 # openMINDS_computation
 A metadata model for simulation, data analysis and visualization provenance in neuroscience; an openMINDS extension.
 
