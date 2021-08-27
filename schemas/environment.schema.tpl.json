@@ -12,7 +12,7 @@
         "hardware": {
             "_instruction": "Select the hardware system on which this environment runs",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/HardwareSystem"
+                "https://openminds.ebrains.eu/computation/Hardware"
             ]
         },
         "configuration": {
