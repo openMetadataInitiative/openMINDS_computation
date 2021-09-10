@@ -20,7 +20,7 @@
             "minItems": 1,
             "uniqueItems": true,
             "_instruction": "Add all important hardware settings defining this environment.",
-            "_linkedTypes": [
+            "_embeddedTypes": [
                "https://openminds.ebrains.eu/core/ParameterSet"
             ]
         },

@@ -26,7 +26,7 @@
         },
         "environmentVariables": {
             "_instruction": "Enter any environment variables defined by this launch configuration.",
-            "_linkedTypes": [
+            "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/ParameterSet"
             ]
 
