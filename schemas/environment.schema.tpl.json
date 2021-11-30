@@ -12,7 +12,7 @@
         "hardware": {
             "_instruction": "Select the hardware system on which this environment runs",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/HardwareSystem"
+                "https://openminds.ebrains.eu/core/HardwareVersion"
             ]
         },
         "configuration": {
@@ -21,7 +21,7 @@
             "uniqueItems": true,
             "_instruction": "Add all important hardware settings defining this environment.",
             "_linkedTypes": [
-               "https://openminds.ebrains.eu/core/ParameterSet"
+                "https://openminds.ebrains.eu/core/ParameterSet"
             ]
         },
         "software": {
@@ -31,11 +31,11 @@
             "_instruction": "Add all software versions available in this environment. [Note: this is optional. The Analysis/Simulation schemas allow storing a list of software versions actually _used_ in a computation",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/SoftwareVersion"
-             ]
+            ]
         },
         "description": {
             "type": "string",
             "_instruction": "Enter a description of this computing environment"
         }
     }
-  }
+}
