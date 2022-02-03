@@ -24,9 +24,12 @@
         "type": "array",
         "minItems": 1,
         "uniqueItems": true,
-        "_instruction": "Add all workflow recipe versions that are components of this workflow recipe version",
+        "_instruction": "Add all workflow recipe versions that are components of this workflow recipe version, as well as the software and/or scripts used in this workflow",
         "_linkedTypes": [
-          "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+          "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion",
+          "https://openminds.ebrains.eu/core/SoftwareVersion",
+          "https://openminds.ebrains.eu/core/File",
+          "https://openminds.ebrains.eu/core/FileBundle"
         ]
       },
       "format": {
