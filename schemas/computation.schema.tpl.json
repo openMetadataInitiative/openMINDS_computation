@@ -68,6 +68,12 @@
             "items": {
               "type": "string"
             }
+        },
+        "recipe": {
+            "_instruction": "Add the workflow recipe version used for this computation",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+            ]
         }
     }
 }
