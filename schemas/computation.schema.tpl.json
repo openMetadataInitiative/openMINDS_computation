@@ -20,9 +20,10 @@
             ]
         },
         "environment": {
-            "_instruction": "Add the computational environment in which this computation was executed.",
+            "_instruction": "Add the computational environment or web service in which this computation was executed.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/Environment"
+                "https://openminds.ebrains.eu/computation/Environment",
+                "https://openminds.ebrains.eu/computation/WebServiceVersion"
             ]
         },
         "launchConfiguration": {
