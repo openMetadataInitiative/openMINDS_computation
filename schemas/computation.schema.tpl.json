@@ -42,8 +42,8 @@
         },
         "wasInformedBy": {
             "_instruction": "Add any other computation that sent data to this one during runtime.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/Computation"
+            "_linkedCategories": [
+                "computationalActivity"
             ]
         },
         "status": {

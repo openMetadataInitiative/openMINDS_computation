@@ -1,4 +1,7 @@
 {
     "_type": "https://openminds.ebrains.eu/computation/DataAnalysis",
-    "_extends": "computation.schema.tpl.json"
+    "_extends": "computation.schema.tpl.json",
+    "_categories": [
+        "computationalActivity"
+    ]
 }
