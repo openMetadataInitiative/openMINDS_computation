@@ -1,6 +1,9 @@
 {
     "_type": "https://openminds.ebrains.eu/computation/Optimization",
     "_extends": "computation.schema.tpl.json",
+    "_categories": [
+        "computationalActivity"
+    ],
     "input": {
         "_linkedTypes": [
             "https://openminds.ebrains.eu/core/FileBundle",

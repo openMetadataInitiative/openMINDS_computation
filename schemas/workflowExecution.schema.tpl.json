@@ -5,11 +5,11 @@
     ],
     "properties": {
         "stages": {
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/DataAnalysis",
-                "https://openminds.ebrains.eu/computation/Optimization",
-                "https://openminds.ebrains.eu/computation/Simulation",
-                "https://openminds.ebrains.eu/computation/Visualization"
+            "type": "array",
+            "minItems":  1,
+            "uniqueItems": true,
+            "_linkedCategories": [
+                "computationalActivity"
             ]
         },
         "startedBy": {
