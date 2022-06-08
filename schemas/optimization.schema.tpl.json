@@ -4,21 +4,23 @@
     "_categories": [
         "computationalActivity"
     ],
-    "input": {
-        "_linkedTypes": [
-            "https://openminds.ebrains.eu/core/FileBundle",
-            "https://openminds.ebrains.eu/core/File",
-            "https://openminds.ebrains.eu/computation/LocalFile",
-            "https://openminds.ebrains.eu/core/SoftwareVersion",
-            "https://openminds.ebrains.eu/core/ModelVersion"
-        ]
-    },
-    "output": {
-        "_linkedTypes": [
-            "https://openminds.ebrains.eu/core/FileBundle",
-            "https://openminds.ebrains.eu/core/File",
-            "https://openminds.ebrains.eu/computation/LocalFile",
-            "https://openminds.ebrains.eu/core/ModelVersion"
-        ]
+    "properties": {
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/FileBundle",
+                "https://openminds.ebrains.eu/core/File",
+                "https://openminds.ebrains.eu/computation/LocalFile",
+                "https://openminds.ebrains.eu/core/SoftwareVersion",
+                "https://openminds.ebrains.eu/core/ModelVersion"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/FileBundle",
+                "https://openminds.ebrains.eu/core/File",
+                "https://openminds.ebrains.eu/computation/LocalFile",
+                "https://openminds.ebrains.eu/core/ModelVersion"
+            ]
+        }
     }
 }
