@@ -35,6 +35,15 @@
           "https://openminds.ebrains.eu/controlledTerms/ModelScope"
         ]
       },
+      "studyTarget": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "_instruction": "Add all study targets of this validation test.",
+        "_linkedCategories": [
+          "studyTarget"
+        ]
+      },
       "experimentalTechnique": {
         "_instruction": "Add the experimental technique used to obtain the reference data for this validation test.",
         "_linkedTypes": [
