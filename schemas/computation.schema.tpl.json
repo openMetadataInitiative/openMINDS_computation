@@ -1,5 +1,5 @@
 {
-    "_extends": "/core/research/activity.schema.tpl.json",
+    "_extends": "/core/schemas/research/activity.schema.tpl.json",
     "required": [
         "launchConfiguration",
         "environment",
