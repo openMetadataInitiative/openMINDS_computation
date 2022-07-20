@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion",
-    "_extends": "/core/products/researchProductVersion.schema.tpl.json",
+    "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
     "required": [
        "format"
     ],
