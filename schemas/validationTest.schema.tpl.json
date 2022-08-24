@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/computation/ValidationTest",
-    "_extends": "/core/products/researchProduct.schema.tpl.json",
+    "_extends": "/core/schemas/products/researchProduct.schema.tpl.json",
     "required": [
       "developer"
     ],
