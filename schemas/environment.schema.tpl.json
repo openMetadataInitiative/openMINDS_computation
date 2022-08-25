@@ -16,12 +16,9 @@
             ]
         },
         "configuration": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Add all important hardware settings defining this environment.",
-            "_embeddedTypes": [
-               "https://openminds.ebrains.eu/core/ParameterSet"
+            "_instruction": "Add all important settings defining this environment.",
+            "_linkedTypes": [
+               "https://openminds.ebrains.eu/core/Configuration"
             ]
         },
         "software": {
