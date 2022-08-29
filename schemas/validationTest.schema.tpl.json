@@ -53,7 +53,7 @@
       "scoreType": {
         "_instruction": "Add the type of the score calculated in this validation test.",
         "_linkedTypes": [
-          "https://openminds.ebrains.eu/controlledTerms/MeasureType"
+          "https://openminds.ebrains.eu/controlledTerms/DifferenceMeasure"
         ]
       }
     }
