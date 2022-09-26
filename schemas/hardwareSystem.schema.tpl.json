@@ -1,20 +1,13 @@
 {
     "_type": "https://openminds.ebrains.eu/computation/HardwareSystem",
+    "_extends": "/core/schemas/products/device.schema.tpl.json",
     "required": [
         "name"
     ],
     "properties": {
-        "name": {
-            "type": "string",
-            "_instruction": "Enter a name/label for this hardware system"
-        },
         "version": {
             "type": "string",
             "_instruction": "Enter a version identifier for this hardware system"
-        },
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description of this hardware system"
         }
     }
-  }
+}
