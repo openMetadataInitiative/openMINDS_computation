@@ -5,7 +5,7 @@
     "properties": {
         "version": {
             "type": "string",
-            "_instruction": "Enter a version identifier for this hardware system"
+            "_instruction": "Enter the version identifier for this hardware system."
         }
     }
 }
