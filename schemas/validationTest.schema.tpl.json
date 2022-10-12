@@ -1,0 +1,60 @@
+{
+    "_type": "https://openminds.ebrains.eu/computation/ValidationTest",
+    "_extends": "/core/schemas/products/researchProduct.schema.tpl.json",
+    "required": [
+      "developer"
+    ],
+    "properties": {
+      "developer": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "_instruction": "Add one or several developers (person or organization) that contributed to this validation test.",
+        "_linkedCategories": [
+          "legalPerson"
+        ]
+      },
+      "digitalIdentifier": {
+        "_instruction": "Add the globally unique and persistent digital identifier of this research product. Note that this digital identifier will be used to reference all attached research product versions.",
+        "_linkedTypes": [
+          "https://openminds.ebrains.eu/core/DOI"
+        ]
+      },
+      "hasVersion": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "_instruction": "Add one or several versions of this validation test.",
+        "_linkedTypes": [
+          "https://openminds.ebrains.eu/computation/ValidationTestVersion"
+        ]
+      },
+      "scope": {
+        "_instruction": "Add the scope of this validation test.",
+        "_linkedTypes": [
+          "https://openminds.ebrains.eu/controlledTerms/ModelScope"
+        ]
+      },
+      "studyTarget": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "_instruction": "Add all study targets of this validation test.",
+        "_linkedCategories": [
+          "studyTarget"
+        ]
+      },
+      "experimentalTechnique": {
+        "_instruction": "Add the experimental technique used to obtain the reference data for this validation test.",
+        "_linkedTypes": [
+          "https://openminds.ebrains.eu/controlledTerms/Technique"
+        ]
+      },
+      "scoreType": {
+        "_instruction": "Add the type of the score calculated in this validation test.",
+        "_linkedTypes": [
+          "https://openminds.ebrains.eu/controlledTerms/DifferenceMeasure"
+        ]
+      }
+    }
+  }
