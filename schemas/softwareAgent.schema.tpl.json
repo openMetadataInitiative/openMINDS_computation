@@ -8,6 +8,12 @@
     "software"
   ],
   "properties": {
+    "environment": {
+      "_instruction": "Enter the computing environment in which this agent is running/ran.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/Environment"
+      ]
+    },
     "name": {
       "type": "string",
       "_instruction": "Enter a name for this software agent."
@@ -16,12 +22,6 @@
       "_instruction": "Enter the software version being run as this agent.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/SoftwareVersion"
-      ]
-    },
-    "environment": {
-      "_instruction": "Enter the computing environment in which this agent is running/ran.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/Environment"
       ]
     }
   }
