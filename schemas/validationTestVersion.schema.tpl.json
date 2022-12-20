@@ -65,6 +65,15 @@
       "entryPoint": {
           "_instruction": "Add the entry point for this test, for example the Python class name for a SciUnit test.",
           "type": "string"
+      },
+      "configuration": {
+        "_instruction": "Add any configuration information for this test, for example the arguments to the SciUnit class.",
+        "_linkedTypes": [
+          "https://openminds.ebrains.eu/core/URL",
+          "https://openminds.ebrains.eu/core/File",
+          "https://openminds.ebrains.eu/core/PropertyValueList",
+          "https://openminds.ebrains.eu/core/Configuration"
+        ]
       }
     }
-  }
+}
