@@ -1,5 +1,9 @@
-<a href="https://github.com/HumanBrainProject/openMINDS_computation/blob/v1/img/light_openMINDS-comp-logo.png">
-    <img src="https://github.com/HumanBrainProject/openMINDS_computation/blob/v1/img/light_openMINDS-comp-logo.png" alt="openMINDS computation logo" title="openMINDS computation" align="right" height="70" />
+<a href="/img/light_openMINDS-comp-logo.png">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/img/dark_openMINDS-comp-logo.png">
+    <source media="(prefers-color-scheme: light)" srcset="/img/light_openMINDS-comp-logo.png">
+    <img alt="openMINDS computation logo" src="/img/light_openMINDS-comp-logo.png" title="openMINDS computation" align="right" height="70">
+  </picture>
 </a>
 
 # openMINDS_computation
