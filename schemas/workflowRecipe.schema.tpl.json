@@ -1,33 +1,33 @@
 {
-    "_type": "https://openminds.ebrains.eu/computation/WorkflowRecipe",
-    "_extends": "/core/schemas/products/researchProduct.schema.tpl.json",
-    "required": [
-      "developer"
-    ],
-    "properties": {
-      "developer": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "Add one or several developers (person or organization) that contributed to this workflow recipe.",
-        "_linkedCategories": [
-          "legalPerson"
-        ]
-      },
-      "digitalIdentifier": {
-        "_instruction": "Add the globally unique and persistent digital identifier of this research product. Note that this digital identifier will be used to reference all attached research product versions.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/DOI"
-        ]
-      },
-      "hasVersion": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "Add one or several versions of this workflow recipe.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
-        ]
-      }
+  "_type": "https://openminds.ebrains.eu/computation/WorkflowRecipe",
+  "_extends": "/core/schemas/products/researchProduct.schema.tpl.json",
+  "required": [
+    "developer"
+  ],
+  "properties": {
+    "developer": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all parties that developed this workflow recipe.",
+      "_linkedCategories": [
+        "legalPerson"
+      ]
+    },
+    "digitalIdentifier": {
+      "_instruction": "Add the globally unique and persistent digital identifier of this research product. Note that this digital identifier will be used to reference all attached research product versions.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/DOI"
+      ]
+    },
+    "hasVersion": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all versions of this workflow recipe.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+      ]
     }
   }
+}
