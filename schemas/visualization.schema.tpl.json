@@ -1,7 +1,7 @@
 {
-    "_type": "https://openminds.ebrains.eu/computation/Visualization",
-    "_extends": "computation.schema.tpl.json",
-    "_categories": [
-        "computationalActivity"
-    ]
+  "_type": "https://openminds.ebrains.eu/computation/Visualization",
+  "_extends": "computation.schema.tpl.json",
+  "_categories": [
+    "computationalActivity"
+  ]
 }
