@@ -7,7 +7,6 @@
     "argument": {
       "type": "array",    
       "minItems": 1,
-      "uniqueItems": true,
       "_instruction": "Enter all command line arguments for this launch configuration.",
       "items": {
         "type": "string"
