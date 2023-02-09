@@ -1,81 +1,80 @@
 {
-    "_extends": "/core/schemas/research/activity.schema.tpl.json",
-    "required": [
-        "launchConfiguration",
-        "environment",
-        "startedAtTime"
-    ],
-    "properties": {
-        "input": {
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/FileBundle",
-                "https://openminds.ebrains.eu/core/File",
-                "https://openminds.ebrains.eu/computation/LocalFile",
-                "https://openminds.ebrains.eu/core/SoftwareVersion"
-            ]
-        },
-        "output": {
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/FileBundle",
-                "https://openminds.ebrains.eu/core/File",
-                "https://openminds.ebrains.eu/computation/LocalFile"
-            ]
-        },
-        "environment": {
-            "_instruction": "Add the computational environment in which this computation was executed.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/Environment"
-            ]
-        },
-        "launchConfiguration": {
-            "_instruction": "Add the launch configuration of this computation, e.g. command-line arguments",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/LaunchConfiguration"
-            ]
-        },
-        "startedBy": {
-            "_instruction": "Add the person or software agent who launched this computation.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/Person",
-                "https://openminds.ebrains.eu/computation/SoftwareAgent"
-            ]
-        },
-        "wasInformedBy": {
-            "_instruction": "Add any other computation that sent data to this one during runtime.",
-            "_linkedCategories": [
-                "computationalActivity"
-            ]
-        },
-        "status": {
-            "_instruction": "Enter the current status of this computation.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/ActionStatusType"
-            ]
-        },
-        "resourceUsage": {
-            "_instruction": "Enter the resources (e.g. core-hours, energy) used by this computation.",
-            "type": "array",
-            "minItems":  1,
-            "uniqueItems": true,
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue",
-                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
-            ]
-        },
-        "tags": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Enter custom tags for this computation.",
-            "items": {
-              "type": "string"
-            }
-        },
-        "recipe": {
-            "_instruction": "Add the workflow recipe version used for this computation",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
-            ]
-        }
+  "_extends": "/core/schemas/research/activity.schema.tpl.json",
+  "required": [
+    "environment",
+    "launchConfiguration",
+    "startTime"
+  ],
+  "properties": {
+    "environment": {
+      "_instruction": "Add the computational environment in which this computation was executed.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/Environment"
+      ]
+    },
+    "input": {          
+      "_linkedTypes": [ 
+        "https://openminds.ebrains.eu/computation/LocalFile",
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle",
+        "https://openminds.ebrains.eu/core/SoftwareVersion"
+      ]
+    }, 
+    "launchConfiguration": {
+      "_instruction": "Add the launch configuration of this computation (e.g., command-line arguments).",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/LaunchConfiguration"
+      ]
+    },
+    "output": {
+      "_linkedTypes": [        
+        "https://openminds.ebrains.eu/computation/LocalFile",
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle"
+      ]
+    },    
+    "recipe": {
+      "_instruction": "Add the workflow recipe version used for this computation.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+      ]
+    },   
+    "resourceUsage": {
+      "type": "array",
+      "minItems":  1,
+      "uniqueItems": true,      
+      "_instruction": "Enter all resources used during this computation (e.g., core-hours or energy).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "startedBy": {
+      "_instruction": "Add the agent that started this computation.",     
+      "_linkedCategories": [
+        "agent"
+      ]
+    },   
+    "status": {
+      "_instruction": "Enter the current status of this computation.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/ActionStatusType"
+      ]
+    },    
+    "tag": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter any custom tags for this computation.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "wasInformedBy": {
+      "_instruction": "Add another computation that sent data to this one during runtime.",
+      "_linkedCategories": [
+        "computationalActivity"
+      ]
     }
+  }
 }
