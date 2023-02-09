@@ -16,7 +16,7 @@
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "_instruction": "Add all data types that are specifially represented in this local file instance.",
+      "_instruction": "Add all data types that are specifically represented in this local file instance.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/DataType"
       ]
