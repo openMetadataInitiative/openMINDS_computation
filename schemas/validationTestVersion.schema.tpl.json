@@ -1,79 +1,79 @@
 {
-    "_type": "https://openminds.ebrains.eu/computation/ValidationTestVersion",
-    "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
-    "required": [
-       "format"
-    ],
-    "properties": {
-      "developer": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "If necessary, add one or several developers (person or organization) that contributed to the code implementation of this validation test version. Note that these developers will overwrite the ones provided in the validation test this version belongs to.",
-        "_linkedCategories": [
-          "legalPerson"
-        ]
-      },
-      "digitalIdentifier": {
-        "_instruction": "Add the globally unique and persistent digital identifier of this research product version.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/DOI"
-        ]
-      },
-      "format": {
-        "_instruction": "Add the used content type of this validation test version.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/ContentType"
-        ]
-      },
-      "isAlternativeVersionOf": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "Add all validation test versions that can be used alternatively to this one.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/computation/ValidationTestVersion"
-        ]
-      },
-      "isNewVersionOf": {
-        "_instruction": "Add the validation test version preceding this one.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/computation/ValidationTestVersion"
-        ]
-      },
-      "license": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "Add at least one license for this validation test version.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/License"
-        ]
-      },
-      "referenceData": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "Add the data that define the expected output of this test.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/DOI",
-          "https://openminds.ebrains.eu/core/File",
-          "https://openminds.ebrains.eu/core/FileBundle",
-          "https://openminds.ebrains.eu/core/URL"
-        ]
-      },
-      "entryPoint": {
-          "_instruction": "Add the entry point for this test, for example the Python class name for a SciUnit test.",
-          "type": "string"
-      },
-      "configuration": {
-        "_instruction": "Add any configuration information for this test, for example the arguments to the SciUnit class.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/URL",
-          "https://openminds.ebrains.eu/core/File",
-          "https://openminds.ebrains.eu/core/PropertyValueList",
-          "https://openminds.ebrains.eu/core/Configuration"
-        ]
-      }
+  "_type": "https://openminds.ebrains.eu/computation/ValidationTestVersion",
+  "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
+  "required": [
+    "usedFormat"
+  ],
+  "properties": {    
+    "configuration": {
+      "_instruction": "Add the configuration information for this validation test version (e.g., arguments to the SciUnit class).",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/Configuration",
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/PropertyValueList",
+        "https://openminds.ebrains.eu/core/URL"
+      ]
+    },
+    "developer": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all parties that developed this validation test version. Note that these developers will overwrite the developer list provided for the overarching validation test.",
+      "_linkedCategories": [
+        "legalPerson"
+      ]
+    },
+    "digitalIdentifier": {
+      "_instruction": "Add the globally unique and persistent digital identifier of this research product version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/DOI"
+      ]
+    },    
+    "entryPoint": {
+      "type": "string",
+      "_instruction": "Add the entry point for this validation test version (e.g., the Python class name for a SciUnit test)."
+    },
+    "isAlternativeVersionOf": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all validation test versions that can be used alternatively to this validation test version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/ValidationTestVersion"
+      ]
+    },
+    "isNewVersionOf": {
+      "_instruction": "Add the validation test version preceding this validation test version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/computation/ValidationTestVersion"
+      ]
+    },
+    "license": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add the license for this validation test version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/License"
+      ]
+    },
+    "referenceData": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add the data that define the expected output of this validation test version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/DOI",
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle",
+        "https://openminds.ebrains.eu/core/URL"
+      ]
+    },    
+    "usedFormat": {
+      "_instruction": "Add the used content type of this validation test version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/ContentType"
+      ]
     }
+  }
 }
