@@ -1,35 +1,35 @@
 {
-    "_type": "https://openminds.ebrains.eu/computation/LaunchConfiguration",
-    "required": [
-        "executable"
-    ],
-    "properties": {
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description of this launch configuration."
-        },
-        "name": {
-            "type": "string",
-            "_instruction": "Enter a descriptive name for this launch configuration."
-        },
-        "executable": {
-            "type": "string",
-            "_instruction": "Enter the path to the command-line executable"
-        },
-        "arguments": {
-            "type": "array",
-            "_instruction": "Enter command line arguments as a list of strings",
-            "minItems": 1,
-            "items": {
-                "type": "string"
-            }
-        },
-        "environmentVariables": {
-            "_instruction": "Enter any environment variables defined by this launch configuration.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/PropertyValueList"
-            ]
-
-        }
+  "_type": "https://openminds.ebrains.eu/computation/LaunchConfiguration",
+  "required": [
+    "executable"
+  ],
+  "properties": {    
+    "argument": {
+      "type": "array",    
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter all command line arguments for this launch configuration.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string",
+      "_instruction": "Enter a short text describing this launch configuration."
+    },    
+    "environmentVariable": {
+      "_instruction": "Add any environment variables defined by this launch configuration.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/PropertyValueList"
+      ]
+    },
+    "executable": {
+      "type": "string",
+      "_instruction": "Enter the path to the command-line executable."
+    },  
+    "name": {
+      "type": "string",
+      "_instruction": "Enter a descriptive name for this launch configuration."
     }
+  }
 }
