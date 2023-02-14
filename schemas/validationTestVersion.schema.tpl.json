@@ -11,7 +11,7 @@
         "https://openminds.ebrains.eu/core/Configuration",
         "https://openminds.ebrains.eu/core/File",
         "https://openminds.ebrains.eu/core/PropertyValueList",
-        "https://openminds.ebrains.eu/core/URL"
+        "https://openminds.ebrains.eu/core/WebResource"
       ]
     },
     "developer": {
