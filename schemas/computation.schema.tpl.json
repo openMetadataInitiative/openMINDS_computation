@@ -2,7 +2,6 @@
   "_extends": "/core/schemas/research/activity.schema.tpl.json",
   "required": [
     "environment",
-    "launchConfiguration",
     "startTime"
   ],
   "properties": {
