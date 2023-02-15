@@ -1,58 +1,58 @@
 {
-    "_type": "https://openminds.ebrains.eu/computation/LocalFile",
-    "_categories": [
-      "fileOrigin"
-    ],
-    "required": [
-      "path",
-      "name"
-    ],
-    "properties": {
-      "contentDescription": {
-        "type": "string",
-        "_instruction": "Enter a short content description for this file instance."
-      },
-      "dataType": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "_instruction": "Add all data types that are specifially represented in this file.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/controlledTerms/DataType"
-        ]
-      },
-      "format": {
-        "_instruction": "Add the content type of this file instance.",
-        "_linkedTypes": [
-          "https://openminds.ebrains.eu/core/ContentType"
-        ]
-      },
-      "hash": {
-        "_instruction": "Add the hash that was generated for this file instance.",
-        "_embeddedTypes": [
-          "https://openminds.ebrains.eu/core/Hash"
-        ]
-      },
-      "path": {
-        "type": "string",
-        "_instruction": "Enter the file system path to this file, either an absolute path or a path relative to the working directory."
-      },
-      "name": {
-        "type": "string",
-        "_instruction": "Enter the name of this single file."
-      },
-      "specialUsageRole": {
-        "_instruction": "Add a special usage role for this single file.",
-        "_linkedTypes": [
-           "https://openminds.ebrains.eu/controlledTerms/FileUsageRole"
-        ]
-      },
-      "storageSize": {
-        "_instruction": "Enter the storage size this file instance allocates.",
-        "_embeddedTypes": [
-          "https://openminds.ebrains.eu/core/QuantitativeValue"
-        ]
-      }
+  "_type": "https://openminds.ebrains.eu/computation/LocalFile",
+  "_categories": [
+    "fileOrigin"
+  ],
+  "required": [
+    "name",
+    "path"
+  ],
+  "properties": {
+    "contentDescription": {
+      "type": "string",
+      "_instruction": "Enter a short content description for this local file instance."
+    },
+    "dataType": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all data types that are specifically represented in this local file instance.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/DataType"
+      ]
+    },
+    "format": {
+      "_instruction": "Add the content type of this local file instance.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/ContentType"
+      ]
+    },
+    "hash": {
+      "_instruction": "Add the hash that was generated for this local file instance.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/Hash"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "_instruction": "Enter the name of this local file instance."
+    },   
+    "path": {
+      "type": "string",
+      "_instruction": "Enter the file system path (absolute path or relative to the working directory) to this local file instance."
+    },
+    "specialUsageRole": {
+      "_instruction": "Add the special usage role of this local file instance.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/FileUsageRole"
+      ]
+    },
+    "storageSize": {
+      "_instruction": "Enter the storage size of this local file instance.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
     }
   }
+}
   
