@@ -10,9 +10,9 @@
         "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
       ]
     },
-    "stages": {
+    "stage": {
       "type": "array",
-      "minItems":  2,
+      "minItems":  1,
       "uniqueItems": true,
       "_instruction": "Add all stages that were performed in this workflow execution.",
       "_linkedCategories": [
