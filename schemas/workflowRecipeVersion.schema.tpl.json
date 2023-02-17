@@ -2,7 +2,7 @@
   "_type": "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion",
   "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
   "required": [
-    "usedFormat"
+    "format"
   ],
   "properties": {
     "developer": {
@@ -18,6 +18,12 @@
       "_instruction": "Add the globally unique and persistent digital identifier of this research product version.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/DOI"
+      ]
+    },    
+    "format": {
+      "_instruction": "Add the content type of this workflow recipe version.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/ContentType"
       ]
     },
     "hasComponent": {
@@ -55,12 +61,6 @@
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/License"
       ]
-    },
-    "usedFormat": {
-      "_instruction": "Add the used content type of this workflow recipe version.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/ContentType"
-      ]
-    },
+    }
   }
 }
