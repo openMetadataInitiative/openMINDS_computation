@@ -2,14 +2,14 @@
   "_extends": "/core/schemas/research/activity.schema.tpl.json",
   "required": [
     "environment",
-    "launchConfiguration",
     "startTime"
   ],
   "properties": {
     "environment": {
       "_instruction": "Add the computational environment in which this computation was executed.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/Environment"
+        "https://openminds.ebrains.eu/computation/Environment",
+        "https://openminds.ebrains.eu/core/WebServiceVersion"
       ]
     },
     "input": {          
@@ -30,6 +30,7 @@
       "_linkedTypes": [        
         "https://openminds.ebrains.eu/computation/LocalFile",
         "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileArchive",
         "https://openminds.ebrains.eu/core/FileBundle"
       ]
     },    
@@ -69,6 +70,15 @@
       "items": {
         "type": "string"
       }
+    },
+    "technique": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all analysis techniques that were used in this computation.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/AnalysisTechnique"
+      ]
     },
     "wasInformedBy": {
       "_instruction": "Add another computation that sent data to this one during runtime.",
