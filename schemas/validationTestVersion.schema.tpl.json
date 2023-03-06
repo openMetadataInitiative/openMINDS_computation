@@ -2,7 +2,7 @@
   "_type": "https://openminds.ebrains.eu/computation/ValidationTestVersion",
   "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
   "required": [
-    "usedFormat"
+    "format"
   ],
   "properties": {    
     "configuration": {
