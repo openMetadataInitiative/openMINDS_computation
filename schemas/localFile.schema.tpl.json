@@ -12,6 +12,12 @@
       "type": "string",
       "_instruction": "Enter a short content description for this local file instance."
     },
+    "copyOf": {
+      "_instruction": "Add the file of which this is a copy.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
     "dataType": {
       "type": "array",
       "minItems": 1,
@@ -36,7 +42,7 @@
     "name": {
       "type": "string",
       "_instruction": "Enter the name of this local file instance."
-    },   
+    },
     "path": {
       "type": "string",
       "_instruction": "Enter the file system path (absolute path or relative to the working directory) to this local file instance."
@@ -55,4 +61,3 @@
     }
   }
 }
-  
