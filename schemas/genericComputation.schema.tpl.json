@@ -1,0 +1,5 @@
+{
+  "_type": "https://openminds.ebrains.eu/computation/GenericComputation",
+  "_extends": "computation.schema.tpl.json",
+  "_categories": ["computationalActivity"]
+}
