@@ -3,7 +3,14 @@
   "required": [
     "stages"
   ],
-  "properties": {    
+  "properties": {
+    "configuration": {
+      "_instruction": "Add the configuration information for this workflow execution.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/Configuration",
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
     "recipe": {
       "_instruction": "Add the workflow recipe version used for this workflow execution.",
       "_linkedTypes": [
