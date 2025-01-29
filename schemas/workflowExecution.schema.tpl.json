@@ -1,7 +1,7 @@
 {
   "_type": "computation:WorkflowExecution",
   "required": [
-    "stages"
+    "stage"
   ],
   "properties": {
     "configuration": {
