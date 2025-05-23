@@ -66,6 +66,6 @@ The openMINDS metadata framework is closely collaborating with the [InterLex Pro
 [issuetracker-computation]: https://github.com/openMetadataInitiative/openMINDS_computation/issues
 [issuetracker-main]: https://github.com/openMetadataInitiative/openMINDS/issues
 [ks-website]: https://knowledge-space.org
-[license-url]: https://raw.githubusercontent.com/openMetadataInitiative/openMINDS_computation/v1/LICENSE
+[license-url]: https://raw.githubusercontent.com/openMetadataInitiative/openMINDS_computation/v2/LICENSE
 [license-shield]: https://img.shields.io/github/license/openMetadataInitiative/openMINDS_computation
 [scicrunch-website]: https://scicrunch.org
