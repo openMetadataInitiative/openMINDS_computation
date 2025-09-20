@@ -1,0 +1,26 @@
+{
+  "_type": "computation:DeployedInterface",
+  "required": [
+    "accessibility",
+    "interface",
+    "location"
+  ],
+  "properties": {
+    "accessibility": {
+      "_instruction": "Add the accessibility of this deployed interface.",
+      "_linkedTypes": ["controlledTerms.ProductAccessibility"]
+    },
+    "interface": {
+      "_linkedTypes": [
+        "computation.Interface"
+      ]
+    },
+    "location": {
+      "_instruction": "Add the location (for physical services) or URL (for digital services) where this deployed interface may be accessed.",
+      "_linkedTypes": [
+        "core.Location",
+        "core.WebResource"
+      ]
+    }
+  }
+}
