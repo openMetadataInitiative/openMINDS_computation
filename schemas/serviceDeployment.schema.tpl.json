@@ -25,11 +25,15 @@
     },
     "deployedBy": {
       "_instruction": "Add the provenance of the deployment workflow.",
-      "_linkedTypes": ["computation:WorkflowExecution"]
+      "_linkedTypes": [
+        "computation:WorkflowExecution"
+      ]
     },
     "deploymentType": {
       "_instruction": "Enter the type of deployment environment, for example, 'productionù or 'integration'.",
-      "_linkedTypes": ["controlledTerms:DeploymentEnvironmentType"]
+      "_linkedTypes": [
+        "controlledTerms:DeploymentEnvironmentType"
+      ]
     },
     "name": {
       "type": "string",
@@ -46,7 +50,9 @@
     },
     "service": {
       "_instruction": "Add the service that has been deployed.",
-      "_linkedTypes": ["core.Service"]
+      "_linkedTypes": [
+        "core.Service"
+      ]
     },
     "startTime": {
       "type": "string",

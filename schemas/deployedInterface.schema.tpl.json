@@ -8,11 +8,13 @@
   "properties": {
     "accessibility": {
       "_instruction": "Add the accessibility of this deployed interface.",
-      "_linkedTypes": ["controlledTerms.ProductAccessibility"]
+      "_linkedTypes": [
+        "controlledTerms.ProductAccessibility"
+      ]
     },
     "interface": {
       "_linkedTypes": [
-        "computation.Interface"
+        "core.Interface"
       ]
     },
     "location": {
