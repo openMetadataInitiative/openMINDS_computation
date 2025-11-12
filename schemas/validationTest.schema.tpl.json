@@ -20,15 +20,6 @@
         "core:DOI"
       ]
     },
-    "hasVersion": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "_instruction": "Add all versions of this validation test.",
-      "_linkedTypes": [
-        "computation:ValidationTestVersion"
-      ]
-    },
     "referenceDataAcquisition": {
       "type": "array",
       "minItems": 1,
@@ -43,7 +34,7 @@
       "_linkedTypes": [
         "controlledTerms:ModelScope"
       ]
-    },   
+    },
     "scoreType": {
       "_instruction": "Add the type of score calculated in this validation test.",
       "_linkedTypes": [
