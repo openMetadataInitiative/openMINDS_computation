@@ -56,7 +56,7 @@
     "isVersionOf": {
       "_instruction": "Add the version-independent information about this workflow recipe.",
       "_linkedTypes": [
-        "computation:Workflow"
+        "computation:WorkflowRecipe"
       ]
     },
     "license": {
