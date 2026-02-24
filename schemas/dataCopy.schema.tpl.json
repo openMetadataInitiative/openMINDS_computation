@@ -7,7 +7,7 @@
   "properties": {
     "input": {
       "_linkedTypes": [
-        "computation:LocalFile",
+        "core:LocalFile",
         "computation:ValidationTestVersion",
         "core:DatasetVersion",
         "core:File",
@@ -18,7 +18,7 @@
     },
     "output": {
       "_linkedTypes": [
-        "computation:LocalFile",
+        "core:LocalFile",
         "core:File",
         "core:FileBundle"
       ]
