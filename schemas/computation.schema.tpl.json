@@ -14,7 +14,7 @@
     },
     "input": {          
       "_linkedTypes": [ 
-        "computation:LocalFile",
+        "core:LocalFile",
         "core:File",
         "core:FileBundle",
         "core:SoftwareVersion"
@@ -28,7 +28,7 @@
     },
     "output": {
       "_linkedTypes": [        
-        "computation:LocalFile",
+        "core:LocalFile",
         "core:File",
         "core:FileArchive",
         "core:FileBundle"
