@@ -9,7 +9,7 @@
       "_instruction": "Add the computational environment in which this computation was executed.",
       "_linkedTypes": [
         "computation:Environment",
-        "core:WebServiceVersion"
+        "core:Service"
       ]
     },
     "input": {          
