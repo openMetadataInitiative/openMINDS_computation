@@ -2,7 +2,7 @@
   "_type": "computation:DeployedInterface",
   "required": [
     "accessibility",
-    "deploymentURL",
+    "entryPoint",
     "interface"
   ],
   "properties": {
@@ -12,8 +12,8 @@
         "core:Accessibility"
       ]
     },
-    "deploymentURL": {
-      "_instruction": "Add the URL where this deployed interface may be accessed.",
+    "entryPoint": {
+      "_instruction": "Add the URL that serves as the entry point to this deployed interface.",
       "_linkedTypes": [
         "core:WebResource"
       ]
