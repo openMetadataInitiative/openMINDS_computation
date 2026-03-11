@@ -17,7 +17,7 @@
       "_linkedTypes": [
         "core:WebResource"
       ]
-    }
+    },
     "interface": {
       "_instruction": "Enter the interface version that is deployed.",
       "_linkedTypes": [
