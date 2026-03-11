@@ -68,10 +68,10 @@
       "uniqueItems": true,
       "_linkedTypes": [
         "computation:WorkflowRecipeVersion",
-        "computation:DeployedInterface",
         "core:DatasetVersion",
         "core:MetaDataModelVersion",
         "core:ModelVersion",
+        "core:WebResource",
         "sands:AnatomicalAtlasVersion",
         "sands:CommonCoordinateFrameworkVersion"
       ]

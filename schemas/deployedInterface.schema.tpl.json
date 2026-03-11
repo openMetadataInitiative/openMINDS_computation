@@ -2,8 +2,8 @@
   "_type": "computation:DeployedInterface",
   "required": [
     "accessibility",
-    "interface",
-    "location"
+    "entryPoint",
+    "interface"
   ],
   "properties": {
     "accessibility": {
@@ -12,17 +12,16 @@
         "core:Accessibility"
       ]
     },
+    "entryPoint": {
+      "_instruction": "Add the URL that serves as the entry point to this deployed interface.",
+      "_linkedTypes": [
+        "core:WebResource"
+      ]
+    },
     "interface": {
       "_instruction": "Enter the interface version that is deployed.",
       "_linkedTypes": [
         "core:InterfaceVersion"
-      ]
-    },
-    "location": {
-      "_instruction": "Add the location (for physical services) or URL (for digital services) where this deployed interface may be accessed.",
-      "_linkedTypes": [
-        "core:Location",
-        "core:WebResource"
       ]
     }
   }
