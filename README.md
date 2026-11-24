@@ -11,7 +11,7 @@
 [![GitHub][license-shield]][license-url]
 [![GitHub contributors][contributors-shield]][contributors-url]
 
-The **openMINDS_computation** repository hosts one of the schema modules of the openMINDS metadata framework. It defines modular metadata schemas for in-depth descriptions of computational processes and their provenance.
+The **openMINDS_computation** repository hosts one of the schema modules of the **openMINDS metadata framework** that build the overall openMINDS metadata model. It defines modular metadata schemas for in-depth descriptions of computational processes and their provenance.
 
 To generally learn more about the openMINDS metadata framework please go to :arrow_right: [**ReadTheDocs**][docu-url].  
 There you can also explore directly the :arrow_right: [**openMINDS_computation schema specifications**][docu-computation-url].
